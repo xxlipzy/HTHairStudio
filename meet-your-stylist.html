@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Your Stylist - HT Hair Studio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    .hover-box {
+      transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    }
+    .hover-box:hover {
+      transform: scale(1.05);
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .hover-image {
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+    .hover-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    html {
+      scroll-behavior: smooth; /* Enable smooth scrolling */
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hover-box {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center; /* Center-align text */
+      }
+      .hover-box img {
+        margin-bottom: 1rem; /* Add spacing below the image */
+      }
+      h2 {
+        font-size: 1.75rem; /* Adjust heading size */
+      }
+      h3 {
+        font-size: 1.5rem; /* Adjust subheading size */
+      }
+      p {
+        font-size: 1rem; /* Adjust paragraph size */
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header id="navbar" class="bg-transparent fixed top-0 left-0 w-full z-50 transition-colors duration-300">
+    <nav class="container mx-auto flex justify-between items-center py-2 px-6">
+      <h1 id="navbar-title" class="text-2xl font-bold text-black">HT Hair Studio</h1>
+      <ul class="flex space-x-6">
+        <li><a href="MainPage.html" class="nav-link text-black hover:text-gray-600 transition-colors">Home</a></li>
+        <li><a href="meet-your-stylist.html" class="nav-link text-black hover:text-gray-600 transition-colors">Meet Your Stylist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Meet Your Stylist Section -->
+  <section id="stylist" class="py-16 bg-white mt-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Meet Your Stylist</h2>
+      <div class="flex flex-col md:flex-row items-center hover-box p-6 bg-gray-50 rounded-lg shadow-md max-w-md mx-auto md:max-w-lg">
+        <div class="md:w-full p-6">
+          <img src="images/stylist-placeholder.png" alt="Hannah Thompson" class="rounded-lg hover-image">
+        </div>
+        <div class="md:w-full p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Hannah Thompson</h3>
+          <p class="text-gray-600">
+            I've been in the hair industry for over 20 years. I started in West London in a salon in Richmond called Headmasters, then moved to Crawley 12 years ago. I have three boys and have recently set up a studio in JS Barbers after doing most of my clients mobile. Now I'm opening up my own hair salon and juggling mum life. Come in and try out HT Hair Studio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Now Section -->
+  <section id="book-now" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-6">Ready for a New Look?</h2>
+      <p class="text-gray-600 mb-8">Transform your style with Hannah Thompson at HT Hair Studio. Book your appointment today and experience the difference!</p>
+      <a href="https://booksy.com/en-gb/131443_ht-hair-studio_hair-salon_963377_horley#ba_s=sh_1" target="_blank" class="bg-gray-800 text-white px-8 py-4 rounded-full hover:bg-gray-700 transition-colors text-lg">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 HT Hair Studio. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
